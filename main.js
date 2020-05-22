@@ -7,7 +7,8 @@ quotes = [
     '"If you want to make an apple pie from scratch, you must first create the universe."\n- Carl Sagan',
     '[object Objecto]',
     'NaN is a number',
-    '<marquee>Marquees are fun!</marquee>'
+    '<marquee>Marquees are fun!</marquee>',
+    'Nothing is impossible, unless one cannot do it.'
 ]
 
 function randint(l,h){
