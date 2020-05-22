@@ -1,3 +1,4 @@
+<!--The Epitome of UI Design-->
 <html>
     <title>Awesome UI</title>
     <body>
@@ -24,6 +25,12 @@
                 font-size:20pt;
                 margin-left:20px;
                 margin-right:20px;
+            }
+            #terrible{
+                background-color:rgb(100,255,100);
+            }
+            #good{
+                background-color:rgb(235, 235, 235);
             }
             #ad{
                 padding:20px;
@@ -56,9 +63,9 @@
             <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>Try our new awesome interface!</a>
             <button id='adx' onclick='document.getElementById("ad").style.display="none";n=true;'>x</button>
         </div>
-        <button onclick='window.open("https://xkcd.com/524/","_blank")'>Rickroll</button> <!--Not a rickroll-->
+        <button id='terrible' onclick='window.open("https://xkcd.com/524/","_blank")'>Generate terrible UI</button> <!--Not a rickroll-->
         <br>
         <!--I'm sorry for the following line of code-->
-        <button onmouseover='if(n){document.getElementById("ad").style.display="block";n=false} else{document.getElementById("ad").style.display="none";;n=true;}'>Generate good UI</button>
+        <button id='good' onmouseover='if(n){document.getElementById("ad").style.display="block";n=false} else{document.getElementById("ad").style.display="none";;n=true;}'>Generate good UI</button>
     </body>
 </html>

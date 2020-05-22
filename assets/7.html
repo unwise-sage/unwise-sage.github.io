@@ -1,0 +1,86 @@
+<style>
+    html,body{
+        padding:0;
+        margin:0;
+    }
+    #box{
+        text-align: center;
+    }
+    input{
+        padding:10px;
+        font-size:10pt;
+        width:80%;
+        font-family:'Lucida', Arial, Helvetica, sans-serif;
+        letter-spacing:-0.03em;
+        margin:0;
+    }
+    #sub{
+        border-radius:0px;
+        width:20%;
+        font-size:10pt;
+        height:auto;
+        padding:12px;
+        margin-left:0px;
+        font-family:'Lucida', Arial, Helvetica, sans-serif;
+        letter-spacing:-0.05em;
+        background-color:rgb(255, 55, 155);
+        border:none;
+        color:white;
+        margin:0;
+    }
+    @keyframes breathe{
+        0%{
+            border:2px solid rgb(62, 80, 91);
+            top:38px;
+        }
+        50%{
+            border:20px solid rgb(62, 80, 91);
+        }
+        100%{
+            border:2px solid rgb(62, 80, 91);
+            top:38px;
+        }
+    }
+    #oracle{
+        opacity:0.0;
+        transition:all 3s;
+        font-family:'Lucida', Arial, Helvetica, sans-serif;
+        letter-spacing:-0.03em;
+        border-radius:100%;
+        width:100px;
+        height:100px;
+        background-color:rgb(35, 181, 211);
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border:2px solid rgb(62, 80, 91);
+    }
+    #oracle-box{
+        background-color:black;
+        height:300px;
+    }
+    #oracle-speaks{
+        opacity:0;
+        transition: all 3s;
+        color:white;
+        font-family:'Lucida', Arial, Helvetica, sans-serif;
+        letter-spacing:-0.03em;
+    }
+</style>
+<div id=box>
+    <div id='oracle-box' title='I spent way too much time on this joke.'>
+        <input value = 'What am I wasting time on?' readonly=true><button id='sub' onclick='r();'>Ask</button>
+        <br><br>
+        <div id='oracle-speaks'>The oracle has spoken:</div>
+        <div id='oracle'><h3>This.</h3></div>
+    </div>
+</div>
+<script>
+    function r(){
+        document.getElementById('oracle-speaks').style.opacity=1;
+        o = document.getElementById('oracle');
+        o.style.opacity=1.0;
+        o.style.animation='breathe 10s infinite';
+    }
+</script>

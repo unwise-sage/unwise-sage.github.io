@@ -8,7 +8,8 @@ quotes = [
     '[object Objecto]',
     'NaN is a number',
     '<marquee>Marquees are fun!</marquee>',
-    'Nothing is impossible, unless one cannot do it.'
+    'Nothing is impossible, unless one cannot do it.',
+    'The Sage Says: Doubtful'
 ]
 
 function randint(l,h){
