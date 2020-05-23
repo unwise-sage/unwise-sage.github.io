@@ -23,13 +23,17 @@ document.getElementById('quote').innerHTML = quotes[randint(0,quotes.length-1)];
 let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get('p');
 
-let latest_id = (Object.keys(titles).length);
+let latest_id = Object.keys(titles).length-1;
 
 if(id == null){
     id = latest_id;
 }
 
 id = parseInt(id);
+
+if(id < 0){
+    id = '-1';
+}
 
 /* Set the title of the comic */
 

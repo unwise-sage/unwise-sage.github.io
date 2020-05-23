@@ -13,13 +13,15 @@
         font-family:'Lucida', Arial, Helvetica, sans-serif;
         letter-spacing:-0.03em;
         margin:0;
+        border-radius:0;
+        border:none;
     }
     #sub{
         border-radius:0px;
         width:20%;
         font-size:10pt;
         height:auto;
-        padding:12px;
+        padding:10px;
         margin-left:0px;
         font-family:'Lucida', Arial, Helvetica, sans-serif;
         letter-spacing:-0.05em;
@@ -30,19 +32,17 @@
     }
     @keyframes breathe{
         0%{
-            border:2px solid rgb(62, 80, 91);
-            top:38px;
-        }
-        50%{
             border:20px solid rgb(62, 80, 91);
         }
-        100%{
+        50%{
             border:2px solid rgb(62, 80, 91);
-            top:38px;
+        }
+        100%{
+            border:20px solid rgb(62, 80, 91);
         }
     }
     #oracle{
-        opacity:0.0;
+        opacity:0.3;
         transition:all 3s;
         font-family:'Lucida', Arial, Helvetica, sans-serif;
         letter-spacing:-0.03em;
@@ -54,7 +54,11 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        border:2px solid rgb(62, 80, 91);
+        border: 20px solid rgb(62, 80, 91);
+        top:38px;
+    }
+    #oracle-text{
+        opacity:0;
     }
     #oracle-box{
         background-color:black;
@@ -73,7 +77,7 @@
         <input value = 'What am I wasting time on?' readonly=true><button id='sub' onclick='r();'>Ask</button>
         <br><br>
         <div id='oracle-speaks'>The oracle has spoken:</div>
-        <div id='oracle'><h3>This.</h3></div>
+        <div id='oracle'><h3 id='oracle-text'>This.</h3></div>
     </div>
 </div>
 <script>
@@ -82,5 +86,6 @@
         o = document.getElementById('oracle');
         o.style.opacity=1.0;
         o.style.animation='breathe 10s infinite';
+        document.getElementById('oracle-text').style.opacity=1;
     }
 </script>
