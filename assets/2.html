@@ -32,6 +32,9 @@
                 font-size:20pt;
                 color:black;
             }
+            #ad a{
+                color:black;
+            }
             #adx{
                 float:right;
                 font-size:10pt;
@@ -54,9 +57,9 @@
             <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>Try our new stupid interface!</a>
             <button id='adx' onclick='document.getElementById("ad").style.display="none";n=true;'>x</button>
         </div>
-        <button onclick='window.open("https://xkcd.com/524/","_blank")'>Rickroll</button> <!--Not a rickroll-->
+        <button onclick='window.open("https://xkcd.com/524/","_blank")' style='background-color:rgb(100,255,100)'>Generate Terrible UI</button> <!--Not a rickroll-->
         <br>
         <!--I'm sorry for the following line of code-->
-        <button onmouseover='if(n){document.getElementById("ad").style.display="block";n=false} else{document.getElementById("ad").style.display="none";;n=true;}'>Generate good UI</button>
+        <button onmouseover='if(n){document.getElementById("ad").style.display="block";n=false} else{document.getElementById("ad").style.display="none";;n=true;}'>Generate Good UI</button>
     </body>
 </html>
