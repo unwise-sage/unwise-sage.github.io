@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+            }
+            .bin{
+                border-radius:100%;
+            }
+            .num-box{
+                float:left;
+                width:30%;
+            }
+            #min-box{
+                background-color:rgb(211, 211, 211);
+            }
+            .num-box img{
+                width:15vw;
+                height:15vw;
+                border-radius:50%;
+            }
+            th{
+                font-family:Lucida, Arial, Helvetica, sans-serif;
+                letter-spacing:-0.05em;
+                font-size:5vw;
+            }
+        </style>
+        <div id=''>
+            <table class='num-box' id='hour-box'>
+                <tr><th colspan="2">Hour</th></tr>
+                <tr>
+                    <td class='h0' id='0'></td>
+                    <td class='h1' id='0'></td>
+                </tr>
+                <tr>
+                    <td class='h0' id='1'></td>
+                    <td class='h1' id='1'></td>
+                </tr>
+                <tr>
+                    <td class='h0' id='2'></td>
+                    <td class='h1' id='2'></td>
+                </tr>
+                <tr>
+                    <td class='h0' id='3'></td>
+                    <td class='h1' id='3'></td>
+                </tr>
+            </table>
+            <table class='num-box' id='min-box'>
+                <tr><th colspan="2">Minute</th></tr>
+                <tr>
+                    <td class='m0' id='0'></td>
+                    <td class='m1' id='0'></td>
+                </tr>
+                <tr>
+                    <td class='m0' id='1'></td>
+                    <td class='m1' id='1'></td>
+                </tr>
+                <tr>
+                    <td class='m0' id='2'></td>
+                    <td class='m1' id='2'></td>
+                </tr>
+                <tr>
+                    <td class='m0' id='3'></td>
+                    <td class='m1' id='3'></td>
+                </tr>
+            </table>
+            <table class='num-box' id='sec-box'>
+                <tr><th colspan="2">Second</th></tr>
+                <tr>
+                    <td class='s0' id='0'></td>
+                    <td class='s1' id='0'></td>
+                </tr>
+                <tr>
+                    <td class='s0' id='1'></td>
+                    <td class='s1' id='1'></td>
+                </tr>
+                <tr>
+                    <td class='s0' id='2'></td>
+                    <td class='s1' id='2'></td>
+                </tr>
+                <tr>
+                    <td class='s0' id='3'></td>
+                    <td class='s1' id='3'></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            function leftPad(num,digits){
+                num = num.toString();
+                while(num.length < digits){
+                    num = '0'+num;
+                }
+                return num;
+            }
+
+            function convertBin(dec){
+                return (dec >>> 0).toString(2);
+            }
+
+            function getBin(){
+                d = new Date();
+                hr = leftPad(d.getHours(), 2);
+                min = leftPad(d.getMinutes(), 2);
+                sec = leftPad(d.getSeconds(), 2);
+
+                hrBin = [leftPad(convertBin(parseInt(hr[0])),4),leftPad(convertBin(parseInt(hr[1])),4)];
+                minBin = [leftPad(convertBin(parseInt(min[0])),4),leftPad(convertBin(parseInt(min[1])),4)];
+                secBin = [leftPad(convertBin(parseInt(sec[0])),4),leftPad(convertBin(parseInt(sec[1])),4)];
+
+                return [hrBin,minBin,secBin];
+            }
+            
+            function changeCells(){
+                binDate = getBin();
+                classes = ['h0','h1','m0','m1','s0','s1'];
+                images = ['<img src="drake-0.png"/>','<img src="drake-1.png"/>'];
+                for(let c=0; c<classes.length; c++){
+                    for(let i of document.getElementsByClassName(classes[c])){
+                        i.innerHTML = images[binDate[Math.floor(c/2)][c%2][i.id]];
+                    }
+                }
+            }
+            changeCells();
+            setInterval(changeCells,1000);
+        </script>
+    </body>
+</html>

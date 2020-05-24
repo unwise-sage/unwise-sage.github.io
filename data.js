@@ -7,5 +7,6 @@ titles = {
     4:'Self-Referential Checklist', // TODO finish this checklist
     5:'Paradox', // This comic is false
     6:'[redacted]',
-    7:'Unhelpful Oracle'
+    7:'Unhelpful Oracle',
+    8:'Binary Clock'
 }
