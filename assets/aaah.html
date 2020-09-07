@@ -1,0 +1,156 @@
+<script src='aaah.js'></script>
+<style>
+    html,body{
+        font-family:Arial, Helvetica, sans-serif;
+        letter-spacing: -0.03em;
+        margin:0;
+        padding:0;
+    }
+    table tr:nth-child(even) {
+        background-color: #fcfcfc;
+    }
+    table tr:nth-child(odd) {
+        background-color: #fff;
+    }
+    table th {
+        color: rgb(0, 0, 0);
+        background-color: #fff;
+        font-weight: bolder;
+    }
+    table{
+        border-spacing:0;
+    }
+    th{
+        text-align:left;
+    }
+    table,th,td{
+        padding:10px;
+        border: 1px solid #eee;
+        border-collapse: collapse;
+    }
+    #code{
+        width:100%;
+        height:400px;
+    }
+    #container{
+        margin-left:25%;
+        margin-right:25%;
+    }
+    #nav{
+        background-color: #ddd;
+        padding:20px;
+        padding-left:25%;
+        padding-right:25%;
+        position:sticky;
+        top:0;
+        box-shadow:0px 0px 20px rgba(100,100,100,0.3);
+    }
+    #nav a{
+        color:black;
+    }
+    button{
+        padding:10px;
+        border-radius:100%;
+        border:none;
+        width:50px;
+        height:50px;
+        font-size:20pt;
+        text-align:center;
+    }
+    button:hover{
+        background-color: rgb(10,10,10) !important;
+        color: white !important;
+    }
+    #run{
+        background-color: rgb(8, 255, 111);
+    }
+    #bury{
+        background-color: rgb(255,0,119);
+    }
+    #code{
+        background-color:rgb(20,20,20);
+        color:rgb(255, 0, 119);
+        border:none;
+        padding:10px;
+        font-size:20px;
+        height:300px;
+        resize:vertical;
+    }
+</style>
+<div id='nav'><a href = '#'>aaaaaaaa aaaaa aaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaa</a></div>
+<div id='container'>
+    <h1>AAAH!</h1>
+    <p><em>The programming language that screams back at you</em></p>
+    <textarea id='code' spellcheck='false' contenteditable="true">aaaaaaaah ( aaaaaaaa + aaaaa + aaaaaaaaaaaa + aaaaaaaaaaaa + aaaaaaaaaaaaaaa + aaaaaaaaaaaaaaaaaaaaaaaaaaa + aaaaaaaaaaaaaaaaaaaaaaa + aaaaaaaaaaaaaaa + aaaaaaaaaaaaaaaaaa + aaaaaaaaaaaa + aaaa + aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa )</textarea>
+    <br>
+    <br>
+    <button id=run onclick='run(document.getElementById("code").value)' title='Run Code'>▷</button>
+    <button id=bury onclick='document.getElementById("code").value=""' title='Start Over'>×</button>
+    <button id=bury onclick='document.getElementById("code").value=conv(document.getElementById("code").value)' title='Translate JS to AAAH (experimental)'>»</button>
+    <h3>Hello, World!</h3>
+    <p>aaaaaaaah ( aaaaaaaa + aaaaa + aaaaaaaaaaaa + aaaaaaaaaaaa + aaaaaaaaaaaaaaa + aaaaaaaaaaaaaaaaaaaaaaaaaaa + aaaaaaaaaaaaaaaaaaaaaaa + aaaaaaaaaaaaaaa + aaaaaaaaaaaaaaaaaa + aaaaaaaaaaaa + aaaa + aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa )</p>
+    <h3>Reference</h3>
+    <table>
+        <tr><th>AAAH code</th><th>JS equivalent</th></tr>
+        <tr><th colspan="2">Important Stuff</th></tr>
+        <tr><td>ah</td><td>"true"</td></tr>
+        <tr><td>aah</td><td>"false"</td></tr>
+        <tr><td>aaah</td><td>"if"</td></tr>
+        <tr><td>aaaah</td><td>"else"</td></tr>
+        <tr><td>aaaaah</td><td>"let"</td></tr>
+        <tr><td>aaaaaah</td><td>"for"</td></tr>
+        <tr><td>aaaaaaah</td><td>"return"</td></tr>
+        <tr><td>aaaaaaaah</td><td>"alert"</td></tr>
+        <tr><td>aaaaaaaaah</td><td>"function"</td></tr>
+        <tr><th colspan="2">Variables</th></tr>
+        <tr><td>a!</td><td>"a"</td></tr>
+        <tr><td>aa!</td><td>"b"</td></tr>
+        <tr><td>aaa!</td><td>"c"</td></tr>
+        <tr><td>aaaa!</td><td>"d"</td></tr>
+        <tr><td>aaaaa!</td><td>"e"</td></tr>
+        <tr><th colspan="2">Digits</th></tr>
+        <tr><td>aie</td><td>"0"</td></tr>
+        <tr><td>aiee</td><td>"1"</td></tr>
+        <tr><td>aieee</td><td>"2"</td></tr>
+        <tr><td>aieeee</td><td>"3"</td></tr>
+        <tr><td>aieeeee</td><td>"4"</td></tr>
+        <tr><td>aieeeeee</td><td>"5"</td></tr>
+        <tr><td>aieeeeeee</td><td>"6"</td></tr>
+        <tr><td>aieeeeeeee</td><td>"7"</td></tr>
+        <tr><td>aieeeeeeeee</td><td>"8"</td></tr>
+        <tr><td>aieeeeeeeeee</td><td>"9"</td></tr>
+        <tr><th colspan="2">Characters</th></tr>
+        <tr><td>a</td><td>"a"</td></tr>
+        <tr><td>aa</td><td>"b"</td></tr>
+        <tr><td>aaa</td><td>"c"</td></tr>
+        <tr><td>aaaa</td><td>"d"</td></tr>
+        <tr><td>aaaaa</td><td>"e"</td></tr>
+        <tr><td>aaaaaa</td><td>"f"</td></tr>
+        <tr><td>aaaaaaa</td><td>"g"</td></tr>
+        <tr><td>aaaaaaaa</td><td>"h"</td></tr>
+        <tr><td>aaaaaaaaa</td><td>"i"</td></tr>
+        <tr><td>aaaaaaaaaa</td><td>"j"</td></tr>
+        <tr><td>aaaaaaaaaaa</td><td>"k"</td></tr>
+        <tr><td>aaaaaaaaaaaa</td><td>"l"</td></tr>
+        <tr><td>aaaaaaaaaaaaa</td><td>"m"</td></tr>
+        <tr><td>aaaaaaaaaaaaaa</td><td>"n"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaa</td><td>"o"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaa</td><td>"p"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaa</td><td>"q"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaa</td><td>"r"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaa</td><td>"s"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaa</td><td>"t"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaa</td><td>"u"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaa</td><td>"v"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaaa</td><td>"w"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaaaa</td><td>"x"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaaaaa</td><td>"y"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaaaaaa</td><td>"z"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaaaaaaa</td><td>" "</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</td><td>"."</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td><td>"?"</td></tr>
+        <tr><td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td><td>"!"</td></tr>
+    </table>
+    <br>
+    <p>Copyright 2020 Me</p>
+</div>

@@ -5,8 +5,9 @@ titles = {
     2:'The Epitome of UI Design',
     3:'Physics Department', // You are under arrest for breaking the law of conservation of mass!
     4:'Self-Referential Checklist', // TODO finish this checklist
-    5:'Paradox', // This comic is false
+    5:'Punchline',
     6:'[redacted]',
     7:'Unhelpful Oracle',
-    8:'Binary Clock'
+    8:'Binary Clock',
+    9:'AAAH!'
 }
