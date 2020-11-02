@@ -5,9 +5,10 @@ titles = {
     2:'The Epitome of UI Design',
     3:'Physics Department', // You are under arrest for breaking the law of conservation of mass!
     4:'Self-Referential Checklist', // TODO finish this checklist
-    5:'Punchline',
+    5:'Punchline', // There is no punchline
     6:'[redacted]',
     7:'Unhelpful Oracle',
-    8:'Binary Clock',
-    9:'AAAH!'
+    8:'Binary Clock', // Drake Binary Clock
+    9:'AAAH!',
+    10:'Hot Sauce' //Guy who's about to invent hot sauce
 }
