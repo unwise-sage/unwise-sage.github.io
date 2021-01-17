@@ -10,5 +10,6 @@ titles = {
     7:'Unhelpful Oracle',
     8:'Binary Clock', // Drake Binary Clock
     9:'AAAH!',
-    10:'Hot Sauce' //Guy who's about to invent hot sauce
+    10:'Hot Sauce', //Guy who's about to invent hot sauce
+    11:'Artist or Ninja Turtle?'
 }
